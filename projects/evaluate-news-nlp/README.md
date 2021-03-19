@@ -1,6 +1,5 @@
 # Evaluate a news article with Natural Language Processing
 
-
 This project allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
 
@@ -27,7 +26,7 @@ Th  project found in  [GitHup](https://github.com/bmeabeed/fend/tree/refresh-201
 First, you will need to go [here](https://www.meaningcloud.com/developer/login). Signing up will get you an API key. 
 
 ### Step 2: Environment Variables
-Open .env in your folder and replace 
+Open .env in your project and replace 
 `MAPI_KEY=?`
 by your key
 
