@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: 3rem;
+    font-size: 16px;
 }
 
 main {
@@ -12,3 +14,16 @@ section {
     max-width: 800px;
     margin: 50px auto;
 }
+
+
+
+
+  
+  textarea {
+    width: 100%;
+    min-height: 30rem;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  
