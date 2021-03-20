@@ -1,7 +1,12 @@
 var path = require('path')
 const express = require('express')
-const API_URL = 'https://api.meaningcloud.com/sentiment-2.1?lang=en&key=61578c586e3237a75686637a9b14e196'
-const mockAPIResponse = require('./mockAPI.js')
+//Meaning Cloud Api key 
+const MAPI_KEY='61578c586e3237a75686637a9b14e196'
+
+//genert get url for meaning cloud API
+const API_URL = 'https://api.meaningcloud.com/sentiment-2.1?lang=en&key='+MAPI_KEY
+
+//package used to call api
 const axios = require('axios');
 
 
@@ -24,15 +29,17 @@ app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })
 
+//Handel get request to evaluate NLP for gaven url
 app.get('/nlp', async (req, res) => {
    
+    //Generate the meaning cloud calling api url
     let api_url=API_URL+"&url="+req.query.url
-    console.log(api_url)
-
-   
+     
 
     try{
+        //Call meaning cloud service
         const apiResponse = await axios.get(api_url)
+        //send the response to the  clint
        res.send(apiResponse.data)
     }
     catch(e){
@@ -41,7 +48,7 @@ app.get('/nlp', async (req, res) => {
       
       
 
-    //res.send(body)
+   
 
    
       

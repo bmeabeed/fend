@@ -26,9 +26,7 @@ Th  project found in  [GitHup](https://github.com/bmeabeed/fend/tree/refresh-201
 First, you will need to go [here](https://www.meaningcloud.com/developer/login). Signing up will get you an API key. 
 
 ### Step 2: Environment Variables
-Open .env in your project and replace 
-`MAPI_KEY=?`
-by your key
+Open index.js in the server folder and replace the value of **MPI_KEY** by yours key
 
 `MAPI_KEY={Your API Key}`
 
@@ -43,6 +41,12 @@ by your key
 
   ### Step 4: Open your browser to use the project
   After running this command `npm run start` you can access the project using your browser    http://localhost:8080
+
+- Enter avalid url in the **url** field
+- Click on **NLP Evaluate** button to evaluate the selected url
+- The return josn opject will renderd in the NLP Results section
+
+
 
 
 
